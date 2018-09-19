@@ -1,0 +1,134 @@
+<div class="component-holder ng-binding ng-scope" data-component="crn-navbar" id="crn-navbar-986427"> 
+  <nav class="navbar-janus-rh navbar navbar-default"> 
+    <div class="container-fluid"> 
+      <div class="navbar-header"> 
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> 
+        <a class="navbar-brand" href="javascript:void(0);"> 
+          <div class="component-holder ng-binding ng-scope" data-component="crn-image" id="crn-image-535259"> 
+            <img src="img/logo-techne.png" style="max-height:30px; margin-top:-5px"> 
+          </div> </a> 
+      </div> 
+      <div id="navbar" class="navbar-collapse collapse"> 
+        <ul class="nav navbar-nav" style="float:none"> 
+          <li class="dropdown component-holder" data-component=""> <a href="#/home" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-lg fa-home"></i> <span>Principal</span> </a> </li> 
+          <li class="dropdown component-holder navbar-right" data-component="crn-menu-item"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="user-avatar" alt="{{session.user.name}}" ng-src="{{session.picture || 'plugins/cronapp-framework-js/dist/img/nophoto.png'}}" style="max-height:18px;max-width:18px"> <span>{{session.user.name}}</span> <span class="caret"></span> </a> 
+            <ul class="dropdown-menu" style=""> 
+              <li class=""><a class="component-holder" data-toggle="modal" data-target="#modalPassword" data-component="crn-anchor">{{"Home.view.ChangePassword" | translate}}</a></li> 
+              <li ng-click="logout()" class=""><a href="javascript:void(0);"><span>{{"Home.view.Logout" | translate}}</span></a></li> 
+            <li class=""><a href="#/home/logged/Formulario" class="component-holder" xattr-fullsize="display:inline;" style="display:inline;" data-component="crn-anchor">Action item</a></li><li class="active"><a href="#/home/admin/user" class="component-holder" xattr-fullsize="display:inline;" style="display:inline;" data-component="crn-anchor">{{'User' | translate}}</a></li></ul> </li> 
+        </ul> 
+      </div> 
+    </div> 
+  </nav> 
+</div> 
+<div ui-view="" class="container-fluid main-view container-principal" data-container="true" ng-init=""> 
+  <!-- INICIO CONTAINER PRINCIPAL --> 
+  <div class="row painel-central"> 
+    <div class="col-md-4"></div> 
+    <!-- INICIO PAINEL PRINCIPAL --> 
+    <div class="home-grid-visualizacao col-md-12 col-lg-12 "> 
+      <div class=""> 
+        
+        <div class="component-holder ng-binding ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-975876" ng-init="" ng-click=""> 
+          <div class="text-center"> 
+            <!--Teste chamada serviços --> 
+            <h2 class="component-holder ng-binding ng-scope" ng-init="blockly.js.blockly.Bloco.fa_C3_A7a_algo()">Bem vindo, {{session.user.name}}</h2> 
+            <br> 
+            <!--{{usuario.data}}--> 
+            <!-- INICIO GRID ICONES --> 
+            <div class="container" data-container="true" ng-init="cronapi.util.makeCallServerBlocklyAsync('blockly.VerificaRegistro:VerificaRegistro', null, null)"> 
+              <div class="row active"> 
+                <div class="text-center icon-mobile-painel-central"> 
+                  <div class="row"> 
+                    <div class="text-center"> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-cadastro" id="cadastroCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Curriculo', null, null)"> <i class="fa fa-pencil-square-o fa-5x"></i><br> Cadastro currículo </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-historico" id="historicoCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Historico', null, null)"> <i class="fa fa-pencil-square-o fa-5x"></i><br> Histórico </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-curso" id="cursoCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Curso', null, null)"> <i class="fa fa-book fa-5x" aria-hidden="true"></i><br> Curso </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-formacao" id="formacaoCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Forma_C3_A7_C3_A3o', null, null)"> <i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i><br> Formação </button> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                  <div class="row"> 
+                    <div class="text-center"> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-certificacao" id="certificadoCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Certificado', null, null)"> <i class="fa fa-bookmark fa-5x" aria-hidden="true"></i><br> Certificado </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-idioma" id="idiomaCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Idioma', null, null)"> <i class="fa fa-weixin fa-5x" aria-hidden="true"></i><br> Idioma </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-habilidade" id="habilidadeCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AbrirFormulario:Habilidade', null, null)"> <i class="fa glyphicon glyphicon-star-empty fa-5x" aria-hidden="true"></i><br> Habilidade </button> 
+                        </div> 
+                      </div> 
+                      <div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3 col-lg-3"> 
+                        <div class="content-card"> 
+                          <button class="btn btn-painel-metro btn-painel-front btn-painel-back btn-painel-sq-lg btn-rh" cronapp-security="enabled : Administrators" id="rhCV" ng-click="cronapi.util.makeCallServerBlocklyAsync('blockly.AtualizaTela:Executar', null, null)"> <i class="fa fa-users fa-5x" aria-hidden="true"></i><br> Rh </button> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div> 
+              </div> 
+            </div> 
+            <!-- FIM GRID ICONES --> 
+          </div> 
+        </div> 
+      </div> 
+      <!-- FIM DIV PANEL --> 
+    </div> 
+    <!-- FIM PAINEL PRINCIPAL --> 
+    <div class="col-md-4"></div> 
+  </div> 
+  <!-- FIM CONTAINER PRINCIPAL --> 
+</div> 
+<div class="modal fade" id="modalPassword"> 
+  <div class="modal-dialog"> 
+    <div class="modal-content"> 
+      <div class="modal-header"> 
+        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button> 
+        <h4 class="modal-title">Trocar senha</h4> 
+      </div> 
+      <div class="modal-body"> 
+        <form class="form-validation" autocomplete="off" name="form" role="form"> 
+          <div class="text-danger wrapper text-center" ng-show="authError"> 
+          </div> 
+          <div class="list-group list-group-sm"> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="oldPassword" placeholder="{{'Home.view.Old Password' | translate}}"> 
+            </div> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="newPassword" placeholder="{{'Home.view.New Password' | translate}}"> 
+            </div> 
+            <div class="list-group-item"> 
+              <input type="password" class="form-control no-border" id="newPasswordConfirmation" placeholder="{{'Home.view.Confirmation' | translate}}"> 
+            </div> 
+          </div> 
+        </form> 
+      </div> 
+      <div class="modal-footer"> 
+        <button class="btn btn-primary" type="submit" ng-click="changePassword()" ng-disabled="form.$invalid || vm.dataLoading">Trrocar senha</button> 
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button> 
+      </div> 
+    </div> 
+  </div> 
+</div>

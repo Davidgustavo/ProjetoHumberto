@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/home.view.html" resourceType="JAVA" ruleDescription="VerificaRegistro" ruleName="VerificaRegistro" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="185.40000000000032" scrolly="2250" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-82" y="-2197">
+    <field name="NAME">VerificaRegistro</field>
+    <comment h="80" pinned="false" w="160">VerificaRegistro</comment>
+    <statement name="STACK">
+      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=b+agefPT39%|L~Hw%ei" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">Registro</field>
+        <value name="VALUE">
+          <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=+aVZ/-9.c-g7ZOHR?q0" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22FuncionarioCV%22,%22namespace%22:%22diagram.curriculo.entity.FuncionarioCV%22,%22alias%22:%22f%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22f%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22FuncionarioCV%22,%22entityFullName%22:%22diagram.curriculo.entity.FuncionarioCV%22,%22filter%22:%22select%20f%20from%20FuncionarioCV%20f%22,%22params%22:%22%5B%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}"/>
+          </block>
+        </value>
+        <next>
+          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ve=?[fq(b*0bN%q-t]TY" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">historico</field>
+            <value name="VALUE">
+              <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="SRfRhnR]:J#_}OB`t40?" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22HistoricoCV%22,%22namespace%22:%22diagram.curriculo.entity.HistoricoCV%22,%22alias%22:%22h%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22h%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22HistoricoCV%22,%22entityFullName%22:%22diagram.curriculo.entity.HistoricoCV%22,%22filter%22:%22select%20h%20from%20HistoricoCV%20h%22,%22params%22:%22%5B%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}"/>
+              </block>
+            </value>
+            <next>
+              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Qf!7,]ljR+tcivM4sM?p" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                <field name="VAR">curso</field>
+                <value name="VALUE">
+                  <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZP!~zhzq!,p}dj8FvFAn" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22CursoCV%22,%22namespace%22:%22diagram.curriculo.entity.CursoCV%22,%22alias%22:%22c%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22c%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22CursoCV%22,%22entityFullName%22:%22diagram.curriculo.entity.CursoCV%22,%22filter%22:%22select%20c%20from%20CursoCV%20c%22,%22params%22:%22%5B%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                  </block>
+                </value>
+                <next>
+                  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="1)?6}+5bp7`G|q~d/zlb" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field name="VAR">formacao</field>
+                    <value name="VALUE">
+                      <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?j-wvEgGVK:p+5]QwqmV" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                        <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22FormacaoCV%22,%22namespace%22:%22diagram.curriculo.entity.FormacaoCV%22,%22alias%22:%22f%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22f%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22FormacaoCV%22,%22entityFullName%22:%22diagram.curriculo.entity.FormacaoCV%22,%22filter%22:%22select%20f%20from%20FormacaoCV%20f%22,%22params%22:%22%5B%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                      </block>
+                    </value>
+                    <next>
+                      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="HX`nBU!*oM+bp=zW%|T2" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field name="VAR">certificado</field>
+                        <value name="VALUE">
+                          <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="}fj]aU%|!`7U{X|PT=*m" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22CertificacaoCV%22,%22namespace%22:%22diagram.curriculo.entity.CertificacaoCV%22,%22alias%22:%22c%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22c%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22CertificacaoCV%22,%22entityFullName%22:%22diagram.curriculo.entity.CertificacaoCV%22,%22filter%22:%22select%20c%20from%20CertificacaoCV%20c%22,%22params%22:%22%5B%5D%22,%22wizardType%22:%22SELECT%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                          </block>
+                        </value>
+                        <next>
+                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="p%L[!;QVOS.tS|r^9B{_" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                            <field name="VAR">idioma</field>
+                            <value name="VALUE">
+                              <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Q|aVj}^{tyuP@`S_2T7T" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22IdiomaCV%22,%22namespace%22:%22diagram.curriculo.entity.IdiomaCV%22,%22alias%22:%22i%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22i%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22IdiomaCV%22,%22entityFullName%22:%22diagram.curriculo.entity.IdiomaCV%22,%22filter%22:%22select%20i%20from%20IdiomaCV%20i%22,%22params%22:%22%5B%5D%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                              </block>
+                            </value>
+                            <next>
+                              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4Q39=O$WyiFLOI:4O-:!" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                                <field name="VAR">habilidade</field>
+                                <value name="VALUE">
+                                  <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E(5lc#_nqdzg{fC65C|H" multilayer="false" namespace="cronapi.database.Operations.query" origintype="procedures_sql_callreturn" output="true" returntype="ObjectType.DATASET" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAbrir%20consulta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20realizar%20consultas%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Entidade%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Consulta%20SQL%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20para%20consulta%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tabela%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.query%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_callreturn">
+                                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22object%22,%22type%22:%22select%22,%22rulesEntity%22:%5B%7B%22entity%22:%22HabilidadesCV%22,%22namespace%22:%22diagram.curriculo.entity.HabilidadesCV%22,%22alias%22:%22h%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22get%22,%22field%22:%22h%22,%22type%22:%22string%22%7D%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22rules%22:%7B%22condition%22:%22AND%22,%22rules%22:%5B%5D,%22not%22:false,%22valid%22:true%7D,%22isRawSql%22:false,%22multiTenant%22:true,%22paginatorAutomatic%22:false%7D,%22entity%22:%22HabilidadesCV%22,%22entityFullName%22:%22diagram.curriculo.entity.HabilidadesCV%22,%22filter%22:%22select%20h%20from%20HabilidadesCV%20h%22,%22params%22:%22%5B%5D%22%7D" name="{{cronapi.database.Operations.query}}"/>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="L1]t~Z1pjta=UfqSCm0Z" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                    <mutation else="1"/>
+                                    <value name="IF0">
+                                      <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZREDBJ5w0U)p+DHd1`Se" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                        <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="g[#N!p|_0K*2V+vL5y^Q" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                            <field name="VAR">Registro</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="2vl%s4nV:A,1_n%4;1+L" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                        <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="w)v4c@DhN$kZ6J.4,Q`|" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                            <field name="SELECT">historicoCV</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#;EA%4cA@IGX#l2C)Jh4" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                        <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="a(|D3H[6w9Tia58bR3XZ" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                            <field name="SELECT">historicoCV</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <next>
+                                      <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Q,;J_HY:!q@6}U*09jrk" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                        <mutation else="1"/>
+                                        <value name="IF0">
+                                          <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="bTT=ENKcXk#CynMp~0_9" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                            <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5s,KBcyn/JN*A/qt~px#" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                <field name="VAR">historico</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <statement name="DO0">
+                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="doa+UG)2T^dC;hB1HBKZ" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                            <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#O5u:Vt@nH@G4CsfZ3]d" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                <field name="SELECT">cursoCV</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <statement name="ELSE">
+                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?T]B5j!OuX6t$2Qo;MWL" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                            <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="z.N8/9m1+dfC5mmc~%qn" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                <field name="SELECT">cursoCV</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </statement>
+                                        <next>
+                                          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E8axOn1p^LUt@Z.dsD8E" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                            <mutation else="1"/>
+                                            <value name="IF0">
+                                              <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="h~_oIWXWcsLglHoANvv*" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="X,|8yP4?Dl4!@b@p6Gbe" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                    <field name="VAR">curso</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="iV1#%!9}rO~,(mwmoXsl" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ZE}*7.15sp?X5X@ewm%/" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                    <field name="SELECT">formacaoCV</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <statement name="ELSE">
+                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="w7O19E{*W]?XZ$$[)S*4" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="j@W^)$n-Wv@[=HNjXnwH" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                    <field name="SELECT">formacaoCV</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <next>
+                                              <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="oL+i:J/6B5I39nr)Qnz1" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                                <mutation else="1"/>
+                                                <value name="IF0">
+                                                  <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#kzS|8:hw)JG6r}Xvj_l" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                    <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                                      <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="h7BXrK*?hXa2A+SjnfYT" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                        <field name="VAR">formacao</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <statement name="DO0">
+                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4c~7Rjbw_Y2=qkyIio%[" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                    <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="NSZ7]{8z2/q|2a#RpVA^" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                        <field name="SELECT">certificadoCV</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <statement name="ELSE">
+                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4*D}L-u+|p~WJPtFjiM(" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                    <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="11Yje*7x*7o/c|VXZ6u/" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                        <field name="SELECT">certificadoCV</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                                <next>
+                                                  <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="gvqH:bW1YE%zJkcF`yHp" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                                    <mutation else="1"/>
+                                                    <value name="IF0">
+                                                      <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="KQ*.`|;H$9E^r+acNmv5" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                        <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="?AoI_2x$a~0/RYRKQ,/?" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                            <field name="VAR">certificado</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <statement name="DO0">
+                                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="vaIb_I!c/6e5[RPx=Dkb" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                        <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Sql94OpjRBa|Fd$)p/{[" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                            <field name="SELECT">idiomaCV</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <statement name="ELSE">
+                                                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="@jD*~zD0gjA_CFi}wy(_" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                        <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="alOM}p8C_{/r(UEA?%FJ" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                            <field name="SELECT">idiomaCV</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </statement>
+                                                    <next>
+                                                      <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="ViU?lAjV`/8c+/~R]TA=" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                                        <mutation else="1"/>
+                                                        <value name="IF0">
+                                                          <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="NvhIfI@)+MYL%W~t6MOq" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                            <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                                              <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="x;W|3D,O:]*A+ps}OyB*" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                <field name="VAR">idioma</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO0">
+                                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",s?zc]QT3bwsO3#$(mP(" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                            <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="cEu_l6--*Ex)?mwNj6x:" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                                <field name="SELECT">habilidadeCV</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <statement name="ELSE">
+                                                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="L_1+-QQ[_(,S/)@mqqM." multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                            <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="pp5Ta3g5$R,J,,rpfLwN" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                                <field name="SELECT">habilidadeCV</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="SnFkEjGL$pFt{4o=8v^o" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                                                            <mutation else="1"/>
+                                                            <value name="IF0">
+                                                              <block colour="#db802b" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^SB@.L_q?QfM4RaGjG_^" inline="true" multilayer="false" namespace="cronapi.database.Operations.hasElement" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExiste%20registro%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifica%20se%20existe%20registro%20no%20cursor%20atual%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.database.Operations.hasElement%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                                                                <mutation name="{{cronapi.database.Operations.hasElement}}" return-raw-type="cronapi.Var">
+                                                                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.DATASET" name="Fonte de dados"/>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block colour="#a55b80" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="#VmuhTz!Og*XO]/~)Z^@" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                                                    <field name="VAR">habilidade</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="7[^}PUte,$=^.|H?eobq" multilayer="true" namespace="cronapi.screen.enableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EHabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20habilita%20o%20componente%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.enableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                                <mutation name="{{cronapi.screen.enableComponent}}" return-raw-type="undefined">
+                                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="%()s+.vo[NbzCOspj!yA" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                                    <field name="SELECT">rhCV</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                            <statement name="ELSE">
+                                                              <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Nz5iNUefw*Hohk#O.d8m" multilayer="true" namespace="cronapi.screen.disableComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EDesabilitar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20desabilita%20o%20uso%20do%20componente%20na%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.disableComponent%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                                <mutation name="{{cronapi.screen.disableComponent}}" return-raw-type="undefined">
+                                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="J]yde0M+-wx7kEC%I6,O" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                                                    <field name="SELECT">rhCV</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </statement>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</blockly>
